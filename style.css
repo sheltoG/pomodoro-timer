@@ -1,3 +1,5 @@
-p{
-    font-size: 100px;
-}
+.timer{
+    text-align:center;
+    font-size:50px;
+    text-emphasis-style:bold;
+  }
