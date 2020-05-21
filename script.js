@@ -5,5 +5,5 @@ function myTimer()
 {
  timer--;
  $('.timer').text(timer);
- if (timer === 0)                        clearInterval(interval);
+ if (timer === 0) clearInterval(interval);
 }
