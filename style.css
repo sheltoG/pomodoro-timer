@@ -3,7 +3,13 @@
 }
 
 body{
-  background:white;
+  background:rgb(240, 91, 86);
+}
+
+p{
+  font-size: 50px;
+  text-align: center;
+  padding: 0px;
 }
 
 #timer {
@@ -11,12 +17,13 @@ body{
   padding: 10px;
   text-align: center;
   margin: 0 auto;
+  color:black;
 }
 .form {
-  background:grey;
+  background-color:white;
   padding: 40px;
   max-width:600px;
   margin:40px auto;
   border-radius:$br;
-  box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #000000;
 }
