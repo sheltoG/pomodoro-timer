@@ -1,7 +1,7 @@
 var timer = 1500;
 var secondsRemaining;
-var interval = setInterval(myTimer,1000);
- 
+var interval;
+
 function convertSeconds(timer)
 {
 var min = Math.floor (timer / 60);
@@ -14,7 +14,7 @@ if (sec < 10) {
 return min + ':' + sec;
 }
 
-//
+//timer Function
 function myTimer()                         
 {
 document.getElementById("timer").innerHTML = convertSeconds(timer);
@@ -22,3 +22,4 @@ timer--;
 if (timer < 0)                        
   clearInterval(interval);
 }
+

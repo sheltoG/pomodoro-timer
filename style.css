@@ -13,17 +13,76 @@ p{
 }
 
 #timer {
-  font-size: 7em;
-  padding: 10px;
   text-align: center;
-  margin: 0 auto;
+  position: relative;
+  top:30%;
+  transform: translateY(-30%);
+
+  font-size: 7em;
+  font-family: Roboto;
   color:black;
 }
-.form {
-  background-color:white;
-  padding: 40px;
-  max-width:600px;
-  margin:40px auto;
-  border-radius:$br;
-  box-shadow: 0 0 5px #000000;
+
+#logo{
+  text-align: center;
+  position: relative;
+  top:20%;
+  transform: translateY(-20%);
+
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+/* Box */
+.box {
+  position: absolute;
+  width: 506px;
+  height: 360px;
+  left: 467px;
+  top: 71px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 31px;
+}
+.fa-play
+{
+  font-size:48px;
+  position: absolute;
+  width: 83px;
+  height: 77px;
+  left: 200px;
+  top: 265px;
+}
+.fa-pause
+{
+  font-size:48px;
+  position: absolute;
+  width: 83px;
+  height: 77px;
+  left: 270px;
+  top: 265px;
+}
+.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  // play state
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+  &.paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+  }
 }

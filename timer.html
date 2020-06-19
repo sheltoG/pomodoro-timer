@@ -10,9 +10,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d073ee6811.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="form">
-        <div id="timer"></div>
+
+    </div>
+        <div class="box">
+          <p id="logo">FocusTimer</p>
+        <div id="timer">25:00</div>
+        <i class="fa fa-play" onclick="setInterval(myTimer,1000);"></i>
+        <i class="fas fa-pause"></i>
+        </div>
     </body>
 </html>
